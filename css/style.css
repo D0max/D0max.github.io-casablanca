@@ -1,11 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Overpass:300,400,800&display=swap');
+@import url('https://fonts.googleapis.com/css??family=Anton&display=swap|Ubuntu:300,400,500&display=swap');
+/*font-family: 'Anton', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
 *,
 h1, h2,
 h3, h4, h5,
-h6, p , span, ul, li{
+h6, p , span, ul, li, a{
   padding: 0;
   margin: 0;
   list-style: none;
+}
+button, input{
+  outline: none;
 }
 
 
@@ -13,6 +19,8 @@ body{
   color: #222222;
   background: #ffffff;
   font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
 }
 
 
@@ -29,8 +37,8 @@ body{
   width: 35px;
   height: 35px;
   position: fixed;
-  left: 10px;
-  top: 20px;
+  left: 30px;
+  top: 30px;
   z-index: 1;
 }
 .btn-burger{
@@ -66,15 +74,24 @@ body{
   width: 100%;
 }
 .nav{
+  display: none;
   position: absolute;
   background: rgba(255, 255, 255, 0.6);
-  display: flex;
   flex-direction: column;
   align-items: center;
   width: 275px;
-  top: 52px;
+  top: 60px;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
+  padding: 20px 0;
+}
+.nav .nav-items{
+  margin-top: 15px;
+}
+.nav .nav-items a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #820c0ca3;
 }
 
 
@@ -85,5 +102,104 @@ body{
   width: 100%;
   display: flex;
   height: 900px;
-  object-fit: contain;
+  background-size: cover;
+}
+.root__section_view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.root__section_title{
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+  font-size: 52px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 40px 0;
+}
+.root__section_line{
+  width: 86px;
+  border: 1px #ffffff solid;
+}
+.root_section_text{
+  color: #fffefe;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1.1px;
+  margin-top: 30px;
+}
+.root__section_view .view{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+.root__section_view .view .mouse-image{
+  position: absolute;
+  bottom: 61px;
+}
+
+
+/*introduction section*/
+
+.introduction__card{
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introduction__card .introduction__card_title{
+  color: #222222;
+  font-family: 'Anton', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 120px;
+}
+.section_line{
+  margin-top: 78px;
+  width: 86px;
+  border: 1px solid #000000;
+}
+.section_text{
+  color: #222222;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-top: 71px;
+}
+.introduction__section .background__image{
+  background: url("../assets/images/creativity.png") 0 0 no-repeat;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  margin-top: 120px;
+}
+.btn{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button__white{
+  color: #ffffff;
+  font-size: 30px;
+  background: transparent;
+  font-weight: bold;
+  border: 3px solid #fff;
+  padding: 30px 100px;
+  border-radius: 2px;
+}
+.button__white:hover{
+  box-shadow: 0px 0px 23px -2px rgba(255,255,255,1);
+  transition: all .4s;
 }
