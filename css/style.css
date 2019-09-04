@@ -237,10 +237,196 @@ body{
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.card-image{
-  margin: 0 10px;
-  margin-bottom: 20px;
-}
 .our_work__section .image{
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+.cards-image .card {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.cards-image:hover .card {
+  box-shadow: inset 0px 0px 0px 8px rgba(0,0,0,1);
+  background: rgb(0, 0, 0, .6)
+}
+.cards-image:hover .image {
 
+  opacity: .3;
+}
+.cards-image{
+  margin-bottom: 20px;
+  position: relative;
+}
+.cards-image .title{
+  font-size: 18px;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.cards-image .company{
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.cards-image .text{
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  left: 32%;
+  top: 35%;
+}
+.cards-image:hover .text{
+  display: flex;
+}
+.cards-image .line{
+  margin-top: 20px;
+  width: 48px;
+  border: 1px solid #d87843;
+}
+.gallery__submit{
+  margin-top: 57px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  border: 3px solid #222222;
+  padding: 13px 96px 13px 94px;
+  background: transparent;
+}
+.to__help{
+  margin-top: 80px;
+  background: url("../assets/images/client.png") 0 0 no-repeat;
+  height: 500px;
+  background-size: cover;
+  opacity: 0.9;
+}
+.clients{
+  background: #f4f4f4;
+}
+.client__company{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  padding-bottom: 120px;
+}
+.client__company .image{
+  width: 170px;
+}
+.about__cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+.about__cards .about_card{
+  position: relative;
+  width: 270px;
+  height: 360px;
+  opacity: .4;
+}
+.about__cards .about_card .root_info{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.about__cards .about_card .info{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  bottom: 20px;
+}
+.about__cards .about_card:hover .root_info{
+  background: rgba(0, 0, 0, .4);
+  box-shadow: inset 0px 0px 0px 5px #000000;
+
+}
+
+.about__cards .about_card .info .name{
+  text-transform: uppercase;
+}
+.about_card .link{
+  position: absolute;
+  display: none;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+.about_card:hover .link{
+  display: flex;
+}
+.about__cards .about_card>img{
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+.about__cards .about_card:hover{
+ opacity: 1;
+}
+.about__cards .about_card:hover .info{
+  display: flex;
+}
+.about__cards .about_card:last-child{
+  opacity: 1;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_card .title{
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 0 89px;
+}
+.about_card .line{
+  margin-top: 56px;
+  width: 86px;
+  border: 1px solid #222222;
+}
+.about_card .about_btn{
+  margin-top: 35px;
+  border: 3px solid #222222;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 55px 13px 53px;
+}
+iframe video{
+  height: 500px !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+iframe{
+  width: 100%;
+  object-fit: cover;
+}
+.video{
+  margin-top: 80px;
+}
+.quote{
+  margin-top: 60px;
+}
+.quote .background__image{
+  width: 100%;
+  height: 500px;
+  background: url("../assets/images/get.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.quote .btn{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
