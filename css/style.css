@@ -689,6 +689,7 @@ iframe{
   }
   .our__info .row {
     flex-direction: column;
+    padding: 0;
   }
   .our__info {
     margin-top: 110px;
@@ -708,9 +709,11 @@ iframe{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
   }
   .our__info .input {
     margin: 10px 0;
+    width: 90%;
   }
   .our__info .form {
     display: flex;
@@ -719,7 +722,7 @@ iframe{
     padding: 100px 30px;
   }
   .our__info .area {
-    width: 60%;
+    width: 90%;
     height: 36px;
     margin: 0 0px;
     margin-top: 60px;
@@ -729,5 +732,8 @@ iframe{
     height: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+  .author_info img{
+    width: 100%;
   }
 }
