@@ -876,12 +876,12 @@ iframe{
 }
 @media only screen and (max-width: 900px){
   .header {
-    height: 670px;
+    height: 750px;
   }
   .root__section_view .view {
     justify-content: flex-start;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 180px;
   }
   .section_line {
     margin-top: 60px;
@@ -909,8 +909,8 @@ iframe{
   }
   .cards-image {
     margin-bottom: 40px;
-    width: 350px;
-    height: 430px;
+    width: 245px;
+    height: 310px;
   }
   .gallery__submit {
     margin-top: 15px;
@@ -935,6 +935,7 @@ iframe{
     margin-top: 60px;
   }
   .about__cards .about_card {
+    margin: 0 25px;
     margin-bottom: 30px;
   }
   .video {
@@ -992,7 +993,7 @@ iframe{
   .our__info .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 100px 30px;
   }
   .our__info .area {
@@ -1009,5 +1010,11 @@ iframe{
   }
   .author_info img{
     width: 100%;
+  }
+  .cards-image .text {
+    left: 25%;
+  }
+  .category__root .category_item .link {
+    font-size: 18px;
   }
 }
